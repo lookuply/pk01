@@ -21,8 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
         anchor.addEventListener('click', function(e) {
+            var href = this.getAttribute('href');
+            if (href === '#' || href === '') {
+                e.preventDefault();
+                return;
+            }
             e.preventDefault();
-            var target = document.querySelector(this.getAttribute('href'));
+            var target = document.querySelector(href);
             if (target) {
                 target.scrollIntoView({
                     behavior: 'smooth',
