@@ -304,6 +304,22 @@ a:hover {
     font-size: 1.125rem;
 }
 
+.contact-email {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 2px solid var(--color-primary);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
 /* Footer */
 .footer {
     padding: var(--spacing-md) 0;
