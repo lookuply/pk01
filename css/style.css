@@ -120,6 +120,11 @@ a:hover {
     gap: var(--spacing-lg);
 }
 
+.nav.container {
+    max-width: none;
+    padding: 0;
+}
+
 .logo {
     display: flex;
     align-items: center;
