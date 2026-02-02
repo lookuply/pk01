@@ -423,22 +423,22 @@ a:hover {
     }
 
     .nav {
-        justify-content: space-between;
+        justify-content: center;
         padding: 0 var(--spacing-md);
     }
 
-    .nav-links {
-        order: 2;
+    .mobile-menu-btn {
+        position: absolute;
+        left: var(--spacing-md);
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .lang-switcher {
-        position: static;
-        transform: none;
-        order: 3;
-    }
-
-    .mobile-menu-btn {
-        order: 1;
+        position: absolute;
+        right: var(--spacing-md);
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .hero {
