@@ -163,6 +163,30 @@ a:hover {
     color: white;
 }
 
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: var(--spacing-md);
+}
+
+.lang-flag {
+    font-size: 1.25rem;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    padding: 0.25rem;
+}
+
+.lang-flag:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.lang-flag.active {
+    opacity: 1;
+}
+
 .mobile-menu-btn {
     display: none;
     flex-direction: column;
@@ -387,6 +411,11 @@ a:hover {
 
     .mobile-menu-btn {
         display: flex;
+    }
+
+    .lang-switcher {
+        margin-left: auto;
+        margin-right: var(--spacing-sm);
     }
 
     .hero {
