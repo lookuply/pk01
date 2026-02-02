@@ -422,11 +422,23 @@ a:hover {
         display: flex;
     }
 
+    .nav {
+        justify-content: space-between;
+        padding: 0 var(--spacing-md);
+    }
+
+    .nav-links {
+        order: 2;
+    }
+
     .lang-switcher {
-        position: absolute;
-        right: 60px;
-        top: 50%;
-        transform: translateY(-50%);
+        position: static;
+        transform: none;
+        order: 3;
+    }
+
+    .mobile-menu-btn {
+        order: 1;
     }
 
     .hero {
