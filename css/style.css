@@ -115,8 +115,9 @@ a:hover {
 .nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 72px;
+    gap: var(--spacing-lg);
 }
 
 .logo {
@@ -167,7 +168,6 @@ a:hover {
 .lang-switcher {
     display: flex;
     gap: 0.5rem;
-    margin-left: var(--spacing-md);
 }
 
 .lang-flag {
