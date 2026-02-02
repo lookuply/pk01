@@ -121,8 +121,22 @@ a:hover {
 }
 
 .nav.container {
-    max-width: none;
+    max-width: 100%;
+    width: 100%;
     padding: 0 var(--spacing-md);
+}
+
+/* Desktop: invisible spacer on left to balance flags on right */
+.nav::before {
+    content: '';
+    width: 80px;
+}
+
+.lang-switcher {
+    position: absolute;
+    right: var(--spacing-md);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .logo {
@@ -173,10 +187,6 @@ a:hover {
 .lang-switcher {
     display: flex;
     gap: 0.5rem;
-    position: absolute;
-    right: var(--spacing-md);
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .lang-flag {
